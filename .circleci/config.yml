@@ -576,7 +576,7 @@ jobs:
         type: string
     executor: << parameters.platform >>_large
     working_directory: << pipeline.parameters.build_dir >>/project
-    parallelism: 4
+    parallelism: 5
     environment:
       E2E_TEST_FILTER: "GO"
     steps:
