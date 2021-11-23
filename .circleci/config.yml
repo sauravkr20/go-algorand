@@ -25,6 +25,10 @@ executors:
     machine:
       image: << pipeline.parameters.ubuntu_image >>
     resource_class: large
+  amd64_xlarge:
+    machine:
+      image: << pipeline.parameters.ubuntu_image >>
+    resource_class: xlarge
   arm64_medium:
     machine:
       image: << pipeline.parameters.ubuntu_image >>
@@ -33,16 +37,20 @@ executors:
     machine:
       image: << pipeline.parameters.ubuntu_image >>
     resource_class: arm.large
+  arm64_xlarge:
+    machine:
+      image: << pipeline.parameters.ubuntu_image >>
+    resource_class: arm.xlarge
   mac_amd64_medium:
     macos:
       xcode: 12.0.1
     resource_class: medium
     environment:
       HOMEBREW_NO_AUTO_UPDATE: "true"
-  mac_amd64_large:
+  mac_amd64_xlarge:
     macos:
       xcode: 12.0.1
-    resource_class: large
+    resource_class: xlarge
     environment:
       HOMEBREW_NO_AUTO_UPDATE: "true"
 
