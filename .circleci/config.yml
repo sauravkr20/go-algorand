@@ -47,6 +47,12 @@ executors:
     resource_class: medium
     environment:
       HOMEBREW_NO_AUTO_UPDATE: "true"
+  mac_amd64_large:
+    macos:
+      xcode: 12.0.1
+    resource_class: large
+    environment:
+      HOMEBREW_NO_AUTO_UPDATE: "true"
   mac_amd64_xlarge:
     macos:
       xcode: 12.0.1
