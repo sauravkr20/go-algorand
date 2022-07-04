@@ -10,6 +10,7 @@ ENV GOROOT /usr/local/go
 ENV GOPATH /go
 ENV GOBIN /go/bin
 ENV PATH   $GOPATH/bin:$GOROOT/bin:$PATH
+RUN cowsay moooooooooooooo
 RUN mkdir -p $GOPATH/src/github.com/algorand
 WORKDIR $GOPATH/src/github.com/algorand
 RUN git clone https://github.com/algorand/go-algorand
